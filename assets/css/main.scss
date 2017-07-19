@@ -88,6 +88,9 @@ input[type="email"],textarea {
 .mgt-full {
     margin-top: 100%;
     display: block;
+    @media (max-width:992px) {
+        margin-top: 10%;
+    }
 }
 
 
@@ -251,7 +254,7 @@ input[type="email"],textarea {
     }
 }
 .content-page {
-    margin: 40px 174px 47px 0px;
+    margin: 40px 181px 47px 0px;
     min-height: 790px;
     @media (max-width:992px) {
         margin:0;
@@ -412,6 +415,7 @@ input[type="email"],textarea {
             }
             .text-frontend {
                 margin-right: -116px !important;
+                margin-top: 110px;
             }
         }
         
