@@ -18,5 +18,16 @@ $( document ).ready(function() {
       $('[data-toggle="tooltip"]').tooltip();
    });
 
+   
+   $(".btn-contact").click(function(e) {
+      $email = $("#email").val();
+      $message = $("#message").val();
+      if($email == "" && $message == "") {
+         e.preventDefault();
+         alert("Fill in the fields");
 
+      }
+      
+   });
+   
 });
