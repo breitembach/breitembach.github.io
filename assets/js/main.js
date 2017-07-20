@@ -20,12 +20,12 @@ $( document ).ready(function() {
 
    
    $(".btn-contact").click(function(e) {
-      $email = $("#email").val();
-      $message = $("#message").val();
-      if($email == "" && $message == "") {
+      email = document.getElementById("email").value;
+      message = document.getElementById("message").value;
+      
+      if(email == "" || message == "") {
          e.preventDefault();
          alert("Fill in the fields");
-
       }
       
    });
