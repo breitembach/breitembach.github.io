@@ -57,6 +57,12 @@ h2 {
 .form-control:focus {
     box-shadow: none;
 }
+.mgt-20 {
+   margin-top: 20px;
+}
+.mgt-10 {
+   margin-top: 10px;
+}
 input[type="email"],textarea {
     border-radius: 0 !important;
     color: $color-white !important;
@@ -296,7 +302,7 @@ input[type="email"],textarea {
             transition: all ease 2s;
             height: 5px;
             background: $color-orange;
-            z-index: 9999999;
+            z-index: 9;
             bottom: 0;
             display: block;
             
@@ -615,6 +621,12 @@ $timeline-color: $color-orange;
 	position: relative;
 	@include prefix(transition, all .4s ease);
 
+   //projects DeskTop Cursor
+   .desktop img {
+      &:hover {
+         cursor: url('../icons/search.png'), default !important;
+      }
+   }
 	&:before {
 		content:"";
 		width: 3px;
@@ -658,8 +670,9 @@ $timeline-color: $color-orange;
 		.timeline-content {
 			width: 45%;
 			background: #3f4146;
-            padding: 20px;
-            display: inline-block;
+         padding: 20px;
+         display: inline-block;
+         
 			@include prefix(box-shadow, 0 3px 0 rgba(0,0,0,0.1));
 			@include prefix(border-radius, 5px);
 			@include prefix(transition, all .3s ease);
